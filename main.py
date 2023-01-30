@@ -23,7 +23,7 @@ def main():
 	twos_complement_list = [get_twos_complement_number(i) for i in numbersList]
 	final_answer = bin(int(f'0b{twos_complement_list[0]}', 2) + int(f'0b{twos_complement_list[1]}', 2))[2:]
 	twos_complement_of_the_final_answer = get_twos_complement_number(final_answer)
-	print("The total is: -" + twos_complement_of_the_final_answer)
+	print("The total is: -" + twos_complement_of_the_final_answer.zfill(4))
 
 
 if __name__ == '__main__':
